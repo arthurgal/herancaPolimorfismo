@@ -30,4 +30,11 @@ public abstract class TaxPayer {
 	}
 	
 	public abstract double tax();
+
+	@Override
+	public String toString() {
+		return name + ": $ " + String.format("%.2f", tax());
+	}
+	
+	
 }
